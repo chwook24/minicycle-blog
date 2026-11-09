@@ -189,7 +189,7 @@
   }
   window.addEventListener('DOMContentLoaded', trackBlogArticleEngagement);
 </script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/#article","headline":"Why MiniCycle's predicted period date keeps changing","description":"MiniCycle recalculates predictions from saved period starts, the cycle-length setting, and the current date. Learn which changes move the next expected period and what remains uncertain.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-predictions-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman holding a journal and moving a note on a calendar."},"datePublished":"2026-07-02","dateModified":"2026-09-02","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"Why MiniCycle's predicted period date keeps changing","item":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/#article","headline":"Why MiniCycle's predicted period date keeps changing","description":"MiniCycle recalculates predictions from saved period starts, the cycle-length setting, and the current date. Learn which changes move the next expected period and what remains uncertain.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-predictions-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman holding a journal and moving a note on a calendar."},"datePublished":"2026-07-02","dateModified":"2026-11-09","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"Why MiniCycle's predicted period date keeps changing","item":"https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/"}]}]}</script>
         </head>
           <body class="article-page">
         <a class="skip-link" href="#main-content">Skip to content</a>
@@ -227,10 +227,10 @@
                   <div class="article-heading">
                     <p class="category-pill">Predictions</p>
                     <h1>Why MiniCycle&#x27;s predicted period date keeps changing</h1>
-                    <p class="article-meta"><span>Published <time datetime="2026-07-02">July 2, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-09-02">September 2, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
+                    <p class="article-meta"><span>Published <time datetime="2026-07-02">July 2, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-11-09">November 9, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
                     <section class="answer-summary" aria-label="At a glance">
                       <p class="eyebrow">At a glance</p>
-                      <p>A predicted period date can change after you record, edit, or delete a period, change the cycle-length setting, or move beyond an unrecorded predicted cycle. The new date reflects the app&#x27;s current inputs, but it is still an estimate and is not guaranteed to be more accurate simply because it changed.</p>
+                      <p>A predicted period date can change after you record, edit, or delete a period, change the cycle-length setting, or move beyond an unrecorded predicted cycle. The new date reflects the app&#x27;s current inputs, but it is still an estimate and is not guaranteed to be more accurate simply because it changed. A later prediction does not mean that a period actually occurred.</p>
                     </section>
                   </div>
                   <figure class="article-visual">
@@ -242,7 +242,16 @@
                 </header>
                 <div class="article-layout">
                   <div class="article-body">
-        <section class="article-section" aria-labelledby="section-1">
+        <section class="article-section" aria-labelledby="prediction-checks">
+  <h2 id="prediction-checks">What to check before changing a record</h2>
+<ol>
+<li><strong>A period happened, but you did not log it.</strong> <a href="../forgot-to-log-period-minicycle-missing-cycle/">Add the missed period using the actual start date</a>. If you cannot remember the date, do not invent one to match the prediction.</li>
+<li><strong>A saved start or end date is wrong.</strong> <a href="../fix-wrong-period-date-in-minicycle/">Correct the period date you recorded</a>. Change the record to reflect what happened, rather than editing it just to move the estimate.</li>
+<li><strong>Only the widget shows a different date.</strong> Check the record in the app, then follow the <a href="../minicycle-widget-not-updating-refresh/">widget refresh checks</a>. A display delay is not a reason to change an accurate period record.</li>
+</ol>
+<p>If bleeding has not started, a later prediction does not mean that a period occurred. Keep the last actual start date in your record and read the guidance below about a late or missed period.</p>
+</section>
+<section class="article-section" aria-labelledby="section-1">
   <h2 id="section-1">Why the date moves</h2>
 <p>Logging a new period start, editing or deleting a period, or changing the cycle-length setting can move the next expected period and the dependent ovulation and fertile-window estimates. The period-length setting changes how many predicted bleeding days are shown, not the next start date itself.</p>
 <p>The current day is also an input. If an expected cycle passes without a new recorded start, the app can advance to a later predicted cycle even though the saved records did not change.</p>
@@ -260,7 +269,7 @@
 </section>
 <section class="article-section" aria-labelledby="section-4">
   <h2 id="section-4">Ovulation and the fertile window shift with it</h2>
-<p>Ovulation is not pinned to a fixed day 14. MiniCycle counts it backward from the next expected period using a luteal phase that flexes between 9 and 14 days depending on your cycle length. The fertile window then runs from five days before that estimated ovulation through the day after it. All of it hangs off the next-period estimate.</p>
+<p>MiniCycle estimates ovulation by counting backward from the next expected period using an internal offset of 9–14 days, depending on the cycle length. This is a calculation rule, not a measurement of your luteal phase or confirmation that you ovulated. The app highlights the five days before estimated ovulation through the following day as its estimated fertile window.</p>
 <p>So when the period date moves, ovulation and the sky-blue fertile band move with it, in the same direction. You do not adjust them separately. They sit downstream of the one date the app is really estimating.</p>
 </section>
 <section class="article-section" aria-labelledby="section-5">
@@ -269,9 +278,10 @@
 <p>The app also writes shared data and requests a widget reload. iOS controls the actual redraw time, so the widget can temporarily show an older prediction even after the app has recalculated.</p>
 </section>
 <section class="article-section" aria-labelledby="section-6">
-  <h2 id="section-6">What a moving date can and cannot tell you</h2>
-<p>A shifting estimate reflects your data, not your health. Cycles vary. An analysis of more than 600,000 cycles found that cycle length differs from person to person and from month to month for most people, which is the reason MiniCycle keeps re-estimating instead of trusting a single figure. A prediction that lands a few days off is ordinary, not a fault in the app or in you.</p>
-<p>What the moving date cannot do is diagnose anything. It is reference information drawn from your own dates, not contraception and not a verdict on pregnancy. <a class="source-link" href="https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186">Mayo Clinic</a> suggests checking with a clinician if your periods come less than 24 or more than 38 days apart, stop for more than 90 days without pregnancy, or turn irregular after being regular. If you want the predicted date to track you as closely as possible, the habit that helps most is logging each period start on the day it happens, so the anchor the app measures from is always right.</p>
+  <h2 id="section-6">A new prediction does not explain a late period</h2>
+<p>A calendar estimate advancing is different from a period actually starting. MiniCycle cannot determine why bleeding has not started, confirm pregnancy, or be used as contraception. See <a href="../why-is-my-period-late-common-reasons/">what to check when your period is late</a> for guidance beyond the app settings.</p>
+<p><a class="source-link" href="https://www.nature.com/articles/s41746-019-0152-7">Research using Natural Cycles app data</a> found variation in cycle length, but its users do not represent everyone. That finding cannot establish why your cycle changed or show that every delay is harmless.</p>
+<p><a class="source-link" href="https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186">Mayo Clinic</a> advises discussing periods less than 24 or more than 38 days apart, periods that stop for more than 90 days without pregnancy, or a previously regular pattern becoming irregular with a healthcare professional. Seek advice sooner if symptoms or a change concern you; a new app estimate does not replace that assessment.</p>
 </section>
                     <section class="callout" aria-labelledby="try-minicycle">
                       <img class="callout-mark" src="../../assets/minicycle-app-icon.png" alt="" width="42" height="42" loading="lazy">
@@ -309,12 +319,13 @@
                     <nav class="article-toc" aria-label="On this page">
                       <p class="toc-title">On this page</p>
                       <ol>
-        <li><a href="#section-1">Why the date moves</a></li>
+        <li><a href="#prediction-checks">What to check before changing a record</a></li>
+<li><a href="#section-1">Why the date moves</a></li>
 <li><a href="#section-2">Your most recent start is the anchor</a></li>
 <li><a href="#section-3">Cycle length is recalculated from recent intervals</a></li>
 <li><a href="#section-4">Ovulation and the fertile window shift with it</a></li>
 <li><a href="#section-5">Reminders and the widget</a></li>
-<li><a href="#section-6">What a moving date can and cannot tell you</a></li>
+<li><a href="#section-6">A new prediction does not explain a late period</a></li>
                       </ol>
                     </nav>
                   </aside>
