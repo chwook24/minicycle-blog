@@ -189,7 +189,7 @@
   }
   window.addEventListener('DOMContentLoaded', trackBlogArticleEngagement);
 </script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/#article","headline":"What the MiniCycle statistics tab shows about your cycles","description":"MiniCycle's statistics tab shows three summaries and recent cycle and period-length charts from the dates you recorded. Here is what the numbers actually use.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-statistics-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman comparing records across several open notebooks."},"datePublished":"2026-06-22","dateModified":"2026-09-02","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"What the MiniCycle statistics tab shows about your cycles","item":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/#article","headline":"What the MiniCycle statistics tab shows about your cycles","description":"MiniCycle's statistics tab shows three summaries and recent cycle and period-length charts from the dates you recorded. Here is what the numbers actually use.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-statistics-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman comparing records across several open notebooks."},"datePublished":"2026-06-22","dateModified":"2026-11-11","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"What the MiniCycle statistics tab shows about your cycles","item":"https://minicycle.net/blog/minicycle-statistics-tab-recent-cycles/"}]}]}</script>
         </head>
           <body class="article-page">
         <a class="skip-link" href="#main-content">Skip to content</a>
@@ -227,10 +227,10 @@
                   <div class="article-heading">
                     <p class="category-pill">Cycle statistics</p>
                     <h1>What the MiniCycle statistics tab shows about your cycles</h1>
-                    <p class="article-meta"><span>Published <time datetime="2026-06-22">June 22, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-09-02">September 2, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
+                    <p class="article-meta"><span>Published <time datetime="2026-06-22">June 22, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-11-11">November 11, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
                     <section class="answer-summary" aria-label="At a glance">
                       <p class="eyebrow">At a glance</p>
-                      <p>The statistics tab shows three summary cards: cycle length, period length, and the number of recorded periods. Below them are charts built from your recent records. These statistics are separate from the settings used for future predictions, so it helps to know which dates feed each number and what the label ‘average’ means in the current app.</p>
+                      <p>The statistics tab shows cycle length, period length, and the number of recorded periods, with charts built from recent records. For the cycle-length and period-length cards, ‘average’ currently means a median-style representative value, not a sum divided by the number of samples. The examples below explain that difference; recorded statistics are separate from the settings used for future predictions.</p>
                     </section>
                   </div>
                   <figure class="article-visual">
@@ -257,6 +257,16 @@
 <p>The interface currently labels the summary as an average, but the implementation uses a median-style representative value rather than an arithmetic mean. With an even number of samples it rounds the midpoint of the two middle values. When there are at least 10 samples, it removes one shortest and one longest value before taking that midpoint.</p>
 <p>This makes the summary less sensitive to a single extreme value. It also means you should not try to reproduce the card by adding every point and dividing by the count; that is not the calculation the current app uses.</p>
 <p class="article-next-reading">For the settings behind these estimates, see <a class="source-link" href="https://minicycle.net/blog/auto-vs-manual-cycle-length-period-length/">Auto vs manual cycle and period length in MiniCycle</a>.</p>
+</section>
+<section class="article-section" aria-labelledby="median-examples">
+  <h2 id="median-examples">Worked examples: median vs arithmetic mean</h2>
+<p>These are fictional numbers to explain the calculation, not real user records or recommended cycle or period lengths. Each list is already sorted from shortest to longest.</p>
+<ul>
+<li><strong>Five cycle intervals: 26, 27, 28, 29, 40 days.</strong> The middle value is 28, so the representative value is 28 days. Adding the five values and dividing by five gives an arithmetic mean of 30 days instead.</li>
+<li><strong>Four cycle intervals: 26, 27, 28, 35 days.</strong> The middle pair is 27 and 28. Their midpoint is 27.5, which the app rounds to 28 days. The arithmetic mean of all four values is 29 days.</li>
+<li><strong>Five period lengths: 3, 4, 4, 5, 7 days.</strong> The middle value is 4, so the representative value is 4 days. The arithmetic mean is 4.6 days.</li>
+</ul>
+<p>All three examples have fewer than 10 samples, so the step that removes one shortest and one longest value does not apply. The examples explain why a summary can differ from an arithmetic mean; they do not tell you whether a cycle pattern is healthy.</p>
 </section>
 <section class="article-section" aria-labelledby="section-4">
   <h2 id="section-4">Storage and limits</h2>
@@ -300,6 +310,7 @@
         <li><a href="#section-1">The three summary cards</a></li>
 <li><a href="#section-2">Up to 24 recent samples</a></li>
 <li><a href="#section-3">What ‘average’ currently means</a></li>
+<li><a href="#median-examples">Worked examples: median vs arithmetic mean</a></li>
 <li><a href="#section-4">Storage and limits</a></li>
                       </ol>
                     </nav>
