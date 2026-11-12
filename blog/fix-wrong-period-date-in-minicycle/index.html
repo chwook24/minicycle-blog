@@ -189,7 +189,7 @@
   }
   window.addEventListener('DOMContentLoaded', trackBlogArticleEngagement);
 </script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/#article","headline":"How to edit or fix a wrong period date in MiniCycle","description":"Logged a period on the wrong day? Learn how to edit period dates in MiniCycle: move a start, adjust an end, delete a record, and what happens to predictions.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-calendar-edit-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman using a pencil to correct a paper calendar."},"datePublished":"2026-06-07","dateModified":"2026-09-02","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"How to edit or fix a wrong period date in MiniCycle","item":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/#article","headline":"How to edit or fix a wrong period date in MiniCycle","description":"Logged a period on the wrong day? Learn how to edit period dates in MiniCycle: move a start, adjust an end, delete a record, and what happens to predictions.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-calendar-edit-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman using a pencil to correct a paper calendar."},"datePublished":"2026-06-07","dateModified":"2026-11-12","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"How to edit or fix a wrong period date in MiniCycle","item":"https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/"}]}]}</script>
         </head>
           <body class="article-page">
         <a class="skip-link" href="#main-content">Skip to content</a>
@@ -227,10 +227,10 @@
                   <div class="article-heading">
                     <p class="category-pill">Recording</p>
                     <h1>How to edit or fix a wrong period date in MiniCycle</h1>
-                    <p class="article-meta"><span>Published <time datetime="2026-06-07">June 7, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-09-02">September 2, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
+                    <p class="article-meta"><span>Published <time datetime="2026-06-07">June 7, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-11-12">November 12, 2026</time></span><span aria-hidden="true">&middot;</span><span>4 min read</span></p>
                     <section class="answer-summary" aria-label="At a glance">
                       <p class="eyebrow">At a glance</p>
-                      <p>A wrong tap happens. A period gets logged a day early, an end date never gets set, or a date from two months ago turns out to be off. In MiniCycle every prediction is built from the dates you saved, so a correction is worth two minutes of your time. The app has specific rules for replacing, adjusting, and deleting records. Here is how each one works.</p>
+                      <p>To fix a period date in MiniCycle, select the actual day on the calendar and mark a period start or end. To remove one incorrect period, use the trash button in its detail card. After moving a start, check the saved end date too: MiniCycle fills it again from your period-length setting or automatic estimate.</p>
                     </section>
                   </div>
                   <figure class="article-visual">
@@ -242,19 +242,37 @@
                 </header>
                 <div class="article-layout">
                   <div class="article-body">
-        <section class="article-section" aria-labelledby="section-1">
+        <section class="article-section" aria-labelledby="choose-correction">
+  <h2 id="choose-correction">Choose the correction you need</h2>
+<ul>
+<li><strong>The period started on a different day:</strong> <a class="source-link" href="#section-2">Move the start date</a>, then check the end.</li>
+<li><strong>The start is right, but the last day is wrong:</strong> <a class="source-link" href="#section-3">Change only the end date</a>.</li>
+<li><strong>The whole period was entered by mistake:</strong> <a class="source-link" href="#section-4">Delete that one record</a> from its detail card.</li>
+</ul>
+<p>Use dates you can confirm from your records. Do not change a real period date just to make a prediction look right. If the problem is a missing entry or an uncertain date, see <a class="source-link" href="https://minicycle.net/blog/forgot-to-log-period-minicycle-missing-cycle/">how to handle a period you forgot to log</a>.</p>
+</section>
+<section class="article-section" aria-labelledby="section-1">
   <h2 id="section-1">Why a wrong date is worth fixing</h2>
-<p>MiniCycle estimates cycle length from saved period starts, using up to the latest 12 starts and a median-style calculation. That reduces the influence of one unusual interval, but a correction can still change the result depending on how many records you have and which value changed.</p>
+<p>When cycle length is set to automatic, MiniCycle estimates it from saved period starts, using up to the latest 12 starts and a median-style calculation. That reduces the influence of one unusual interval, but a correction can still change the result depending on how many records you have and which value changed.</p>
 <p>The most recent start also anchors future dates. Correcting it generally moves the next-period, ovulation, and fertile-window estimates, but the shift is not guaranteed to equal the same number of days because the cycle-length estimate may change too.</p>
 </section>
 <section class="article-section" aria-labelledby="section-2">
   <h2 id="section-2">Moving a period start to the right day</h2>
 <p>Tap the correct day on the calendar and mark a period start. If it is within 7 days of an existing start, MiniCycle offers to change that period rather than adding a second one. Confirm the Period change alert to apply the correction.</p>
 <p>The end date is filled from the current period-length setting or automatic estimate. If it does not match what happened, select the actual last day and update the end next.</p>
+<h3>A two-day correction, step by step</h3>
+<p>In this fictional example, a period was saved as June 10–14, but the actual dates were June 12–16:</p>
+<ol>
+<li>Select June 12 and mark a period start. It is two days from the saved June 10 start, so confirm the change to replace that record.</li>
+<li>Check the end date MiniCycle filled in. If it is not June 16, select June 16 and mark a period end, confirming the change if prompted.</li>
+<li>Check that the saved period now runs from June 12 through June 16. Counting both the first and last day, that is five days.</li>
+</ol>
+<p>The automatically filled end may differ from this example because your period-length setting or estimate may differ.</p>
 </section>
 <section class="article-section" aria-labelledby="section-3">
   <h2 id="section-3">Adjusting an end date</h2>
 <p>Tap the actual last day of the period and mark a period end. Two rules apply. The end cannot fall before the start, and a single record can span at most 14 days, counting the start day itself. Outside those bounds the app shows a short message instead of saving.</p>
+<p>The 14-day maximum is an app input limit, not a medical definition of a typical period. Do not shorten a real bleeding record just to fit it. Keep the actual dates in a separate note if the app cannot save the full interval. If bleeding is longer or heavier than usual, discuss the pattern with a healthcare professional; <a class="source-link" href="https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186">Mayo Clinic explains what to track and when to seek advice</a>.</p>
 <p>You do not pick a record from a list; you pick a day. The end attaches to the record that contains that day, or to one whose start falls within the previous 14 days. If more than one record qualifies, the one with the most recent start date wins.</p>
 </section>
 <section class="article-section" aria-labelledby="section-4">
@@ -264,13 +282,14 @@
 </section>
 <section class="article-section" aria-labelledby="section-5">
   <h2 id="section-5">What happens after you fix a date</h2>
+<p>Before checking a new prediction, return to the corrected period in the calendar. Confirm its actual start and end and check the neighboring periods for an unwanted extra entry. A changed estimate does not by itself confirm that the saved dates are right.</p>
 <p>The app recalculates estimates and reschedules local notifications from the corrected records. It also writes the shared data and requests a widget reload. iOS decides when the widget redraws, so the home-screen change can take a little longer.</p>
 <p>Records are stored on the device by default. If iCloud Sync is enabled, MiniCycle also attempts to synchronize the corrected state through CloudKit.</p>
 <p class="article-next-reading">For why the estimate moves after a correction, see <a class="source-link" href="https://minicycle.net/blog/why-minicycle-predicted-period-date-changes/">Why MiniCycle&#x27;s predicted period date keeps changing</a>.</p>
 </section>
 <section class="article-section" aria-labelledby="section-6">
   <h2 id="section-6">What corrections can and cannot do</h2>
-<p>A correction makes your record match your body. It cannot make predictions exact. An analysis of more than 600,000 real-world cycles found that cycle length varies from month to month for most people, which is why MiniCycle keeps re-estimating from recent records instead of trusting any single month. Corrected data gives the estimate better inputs, not certainty.</p>
+<p>A correction makes your saved history match what happened. It cannot make predictions exact. Mayo Clinic notes that cycles can vary and recommends tracking period starts and ends, flow, pain, and other changes. Keep the actual record accurate even when the next estimated date is uncertain.</p>
 <p>The dates on the calendar remain reference information for planning. They are not medical advice, contraception, or a way to confirm or rule out pregnancy. If the bleeding pattern itself is what concerns you, that is a conversation for a clinician, and an accurate record of dates is a useful thing to bring along.</p>
 </section>
                     <section class="callout" aria-labelledby="try-minicycle">
@@ -294,7 +313,7 @@
                       <p class="eyebrow">MiniCycle editorial</p>
                       <h2 id="references-title">References</h2>
                       <ul class="references">
-        <li><a href="https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186">Mayo Clinic. Menstrual cycle: What&#x27;s normal, what&#x27;s not.</a></li>
+        <li><a href="https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186">Mayo Clinic. Menstrual cycle: What&#x27;s typical, what&#x27;s not.</a></li>
 <li><a href="https://www.nature.com/articles/s41746-019-0152-7">Bull JR, Rowland SP, Scherwitzl EB, et al. Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles. npj Digital Medicine. 2019.</a></li>
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10952771/">Jain V, Munro MG, Critchley HOD. Contemporary evaluation of women and girls with abnormal uterine bleeding: FIGO Systems 1 and 2. Int J Gynecol Obstet. 2023.</a></li>
 <li><a href="https://minicycle.net/privacy/">MiniCycle Privacy Policy.</a></li>
@@ -309,7 +328,8 @@
                     <nav class="article-toc" aria-label="On this page">
                       <p class="toc-title">On this page</p>
                       <ol>
-        <li><a href="#section-1">Why a wrong date is worth fixing</a></li>
+        <li><a href="#choose-correction">Choose the correction you need</a></li>
+<li><a href="#section-1">Why a wrong date is worth fixing</a></li>
 <li><a href="#section-2">Moving a period start to the right day</a></li>
 <li><a href="#section-3">Adjusting an end date</a></li>
 <li><a href="#section-4">Deleting a record that should not exist</a></li>
