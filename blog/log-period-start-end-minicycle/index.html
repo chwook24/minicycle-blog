@@ -189,7 +189,7 @@
   }
   window.addEventListener('DOMContentLoaded', trackBlogArticleEngagement);
 </script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/log-period-start-end-minicycle/#article","headline":"How to log a period start and end date in MiniCycle","description":"Tap a date, pick period start, and MiniCycle fills the end with your period length. How logging start and end works, the seven-day replace rule, and the 14-day cap.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-calendar-edit-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman using a pencil to correct a paper calendar."},"datePublished":"2026-06-16","dateModified":"2026-09-02","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/log-period-start-end-minicycle/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/log-period-start-end-minicycle/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"How to log a period start and end date in MiniCycle","item":"https://minicycle.net/blog/log-period-start-end-minicycle/"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://minicycle.net/blog/log-period-start-end-minicycle/#article","headline":"How to log a period start and end date in MiniCycle","description":"Tap a date, pick period start, and MiniCycle fills the end with your period length. How logging start and end works, the seven-day replace rule, and the 14-day cap.","image":{"@type":"ImageObject","url":"https://minicycle.net/assets/blog-calendar-edit-editorial-20260906.jpg","width":1200,"height":675,"caption":"AI-generated gouache illustration. A woman using a pencil to correct a paper calendar."},"datePublished":"2026-06-16","dateModified":"2026-11-24","inLanguage":"en","author":{"@type":"Person","@id":"https://minicycle.net/about/#chanwook-kim","name":"Chanwook Kim","alternateName":"김찬욱","url":"https://minicycle.net/about/","jobTitle":"MiniCycle developer","worksFor":{"@id":"https://minicycle.net/#organization"}},"publisher":{"@type":"Organization","@id":"https://minicycle.net/#organization","name":"MiniCycle","url":"https://minicycle.net/","logo":{"@type":"ImageObject","url":"https://minicycle.net/assets/minicycle-app-icon.png","width":1024,"height":1024}},"isPartOf":{"@id":"https://minicycle.net/#website"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://minicycle.net/blog/log-period-start-end-minicycle/#webpage"}},{"@type":"BreadcrumbList","@id":"https://minicycle.net/blog/log-period-start-end-minicycle/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"MiniCycle","item":"https://minicycle.net/"},{"@type":"ListItem","position":2,"name":"MiniCycle Blog","item":"https://minicycle.net/blog/"},{"@type":"ListItem","position":3,"name":"How to log a period start and end date in MiniCycle","item":"https://minicycle.net/blog/log-period-start-end-minicycle/"}]}]}</script>
         </head>
           <body class="article-page">
         <a class="skip-link" href="#main-content">Skip to content</a>
@@ -227,10 +227,10 @@
                   <div class="article-heading">
                     <p class="category-pill">Logging</p>
                     <h1>How to log a period start and end date in MiniCycle</h1>
-                    <p class="article-meta"><span>Published <time datetime="2026-06-16">June 16, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-09-02">September 2, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
+                    <p class="article-meta"><span>Published <time datetime="2026-06-16">June 16, 2026</time></span><span aria-hidden="true">&middot;</span><span>by <a href="../../about/">Chanwook Kim</a>, MiniCycle developer</span><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-11-24">November 24, 2026</time></span><span aria-hidden="true">&middot;</span><span>3 min read</span></p>
                     <section class="answer-summary" aria-label="At a glance">
                       <p class="eyebrow">At a glance</p>
-                      <p>It is the first day of a period and you open MiniCycle to mark it. There is a calendar, a date, and a choice: period start or period end. Pick start and the app does more than drop a dot on that day. It builds a span, fills in an end date, and quietly decides whether this is a new period or a correction to one already there. None of that is obvious from the single tap, so here is what each choice does, what limits it has, and how to fix it when the dates come out wrong.</p>
+                      <p>Select the date in MiniCycle and choose period start or period end. A start initially fills an end date from your period-length setting; update it when the actual last day is known. Review and confirm changes to saved dates. Overlapping ranges have a display priority, not an automatic cleanup rule, and records stay on the device by default unless you enable iCloud Sync.</p>
                     </section>
                   </div>
                   <figure class="article-visual">
@@ -249,23 +249,23 @@
 </section>
 <section class="article-section" aria-labelledby="section-2">
   <h2 id="section-2">Set the real end when the bleeding stops</h2>
-<p>When your period ends, tap that day and choose period end. The app moves the range&#x27;s end to the day you picked, as long as it lands on or after the start. Tap a day before the start and MiniCycle declines and asks for an end on or after the start instead.</p>
-<p>There is a ceiling. A single period range can run at most 14 days from start to end, counting both, so an end that would stretch the span past two weeks is refused. If you tap period end on a calendar with no start logged yet, the app stops you and asks for a start first, since there is no range to close.</p>
+<p>When bleeding has ended, select the actual last day and choose period end. The end must be on or after the saved start. If the proposed end changes an existing saved range, MiniCycle asks you to confirm before applying it. Check the dates and confirm only if they are right; cancelling leaves that saved range unchanged.</p>
+<p>A single period range can be saved for at most 14 days, counting both start and end. This is an app input limit, not a definition of medically normal bleeding. If no suitable start has been logged, the app asks for a start first. Do not enter an invented start or end just to make a record fit.</p>
 </section>
 <section class="article-section" aria-labelledby="section-3">
   <h2 id="section-3">Will logging a start twice create two periods?</h2>
-<p>No, and that is deliberate. Day one is often a guess, and you may tap the wrong date and want to move it a day. So MiniCycle treats a new start logged within seven days of an existing start as a correction: it replaces the old range rather than stacking a second one beside it. Log June 3, realize it was really June 4, tap June 4, and you end with one period, not two.</p>
-<p>The seven-day window cuts both ways, before or after the saved start. A start logged eight or more days from any existing one is read as a genuinely new period and kept on its own. When the replacement would change dates you already saved, the app asks you to confirm before it overwrites.</p>
+<p>It depends on the saved starts. MiniCycle treats a start within seven days before or after an existing start as a replacement candidate. If the proposed range would change saved dates, a confirmation appears before replacement. Fictional example: changing a June 3 start to June 4 changes that saved range only after you confirm; cancelling keeps it as it was.</p>
+<p>More than one saved range can fall within that window, so review existing entries before confirming a replacement. A start at least eight days from every saved start is added as a separate app record. These are record-handling rules, not a medical test of whether two bleeding episodes are separate periods.</p>
 </section>
 <section class="article-section" aria-labelledby="section-4">
-  <h2 id="section-4">When two periods overlap, the most recent start wins</h2>
-<p>Records can still end up overlapping, usually from an end date pushed long or two starts logged close together. When ranges cover the same day, MiniCycle resolves it by start date: the range with the most recent start takes priority for what shows on that day. The newer entry, in other words, is treated as the better one.</p>
-<p>In practice a fresh, accurate start quietly wins over a stale range you forgot to close. If a day still looks wrong after that, the fix is to correct or remove the older range rather than to add another on top of it.</p>
+  <h2 id="section-4">Overlapping ranges: display priority does not delete records</h2>
+<p>If two saved ranges cover the same calendar date, MiniCycle uses the range with the later start for that date’s display. That display choice does not merge the ranges or automatically delete the older one. It also does not establish that the range with the later start is more accurate.</p>
+<p>Review both ranges against your own dates. Correct the start or end of the mistaken range, or delete that range from its detail card if needed, checking the confirmation before proceeding. Adding another start can replace nearby entries rather than repair the overlap you intended to fix. See the <a class="source-link" href="https://github.com/chwook24/mini-cycle/blob/76450a5aa9b118914a607989a36cb2a938a248eb/minicycle/ContentView.swift#L4886-L5050">logging and range-selection implementation</a> used for this explanation.</p>
 </section>
 <section class="article-section" aria-labelledby="section-5">
   <h2 id="section-5">What these dates feed, and what they can&#x27;t</h2>
 <p>Your start dates are the engine for everything the app predicts. The next period is estimated from the start dates you have saved. Ovulation is counted back from that estimate using a luteal phase that flexes between 9 and 14 days with your cycle length, not a fixed two weeks, and the fertile window runs from five days before that estimated ovulation through the day after. Better start dates mean better predictions, which is the whole reason the logging is worth getting right.</p>
-<p>What the dates can&#x27;t do is diagnose or decide anything medical. The predictions are reference information drawn from your own pattern, not contraception and not a verdict on pregnancy. They stay on your device, since MiniCycle keeps records locally with no account, so the cost of fixing a wrong date is one tap and the benefit is a calendar that matches what actually happened.</p>
+<p>What the dates can&#x27;t do is diagnose or decide anything medical. The predictions are reference information drawn from your own pattern, not contraception and not a verdict on pregnancy. Records are stored on the device by default, without a MiniCycle account. If you enable iCloud Sync, a copy is stored through Apple CloudKit in your iCloud and can sync with devices using the same Apple account. See the <a class="source-link" href="https://minicycle.net/privacy/">privacy policy</a> for storage and sync details.</p>
 <p class="article-next-reading">If an existing date is wrong, follow <a class="source-link" href="https://minicycle.net/blog/fix-wrong-period-date-in-minicycle/">How to edit or fix a wrong period date in MiniCycle</a>.</p>
 </section>
                     <section class="callout" aria-labelledby="try-minicycle">
@@ -291,11 +291,12 @@
                       <ul class="references">
         <li><a href="https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186">Mayo Clinic. Menstrual cycle: What&#x27;s normal, what&#x27;s not.</a></li>
 <li><a href="https://www.nature.com/articles/s41746-019-0152-7">Bull, J.R., et al. Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles. npj Digital Medicine (2019).</a></li>
+<li><a href="https://github.com/chwook24/mini-cycle/blob/76450a5aa9b118914a607989a36cb2a938a248eb/minicycle/ContentView.swift#L4886-L5050">MiniCycle 1.2.7 (build 113). Period logging and range selection.</a></li>
 <li><a href="https://minicycle.net/privacy/">MiniCycle Privacy Policy.</a></li>
                       </ul>
                       <div class="editorial-note">
                         <h3>About this article</h3>
-                        <p>App details are checked against MiniCycle's current behavior. Health information is summarized from the linked clinical and public-health sources and is educational, not a diagnosis or a substitute for medical care. <a href="../../about/">Read the editorial approach</a>.</p>
+                        <p>This revision was checked on November 24, 2026 against the <a href="https://github.com/chwook24/mini-cycle/blob/76450a5aa9b118914a607989a36cb2a938a248eb/minicycle/ContentView.swift#L4886-L5050">MiniCycle 1.2.7 (build 113) source</a>, the public app version, and the published privacy policy. We did not change real records or test these edits in an installed release build. The dated examples are fictional. App input limits are not medical thresholds, and tracking cannot replace medical care. <a href="../../about/">Read the editorial approach</a>.</p>
                       </div>
                     </section>
                   </div>
@@ -306,7 +307,7 @@
         <li><a href="#section-1">Log the start first, and the app fills the rest</a></li>
 <li><a href="#section-2">Set the real end when the bleeding stops</a></li>
 <li><a href="#section-3">Will logging a start twice create two periods?</a></li>
-<li><a href="#section-4">When two periods overlap, the most recent start wins</a></li>
+<li><a href="#section-4">Overlapping ranges: display priority does not delete records</a></li>
 <li><a href="#section-5">What these dates feed, and what they can&#x27;t</a></li>
                       </ol>
                     </nav>
